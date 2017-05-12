@@ -1,0 +1,172 @@
+
+#service{
+    width:100%;
+    height:500px;
+    display:block;
+    background-color:white;
+    position:relative;
+}
+#serviceInfo{
+    width:50%;
+    height:90%;
+    margin-top:3%;
+    float:left;
+    background-size:100% 100%;
+    background-image:url("../pictures/serviceBgFinal1.png");
+    position:relative;
+}
+
+#serInfoHeadline{
+    color:white;
+    font-size:3.8vw;
+    font-family:Cleanwork;
+    line-height:110%;
+}
+
+#serPicturesHolder{
+    position:absolute;
+    width:31%;
+    height:35%;
+    top:45%;
+    left:46%;
+    z-index:2;
+}
+#serInfoPicture{
+    width:78%;
+    height:100%;
+    display:inline-block;
+    background-image:url("../pictures/dady.jpg");
+    background-size:100% 100%;
+    border-radius:5px;
+    box-shadow:-5px 5px 5px rgba(0,0,0,0.4);
+}
+#serInfoPictures{
+    display:inline-block;
+    width:7%;
+    height:50%;
+    padding:0px;
+    margin:0px;
+    margin-left:20px;
+}
+#serInfoPictures li{
+    display:block;
+    width:63%;
+    height:11%;
+    margin:104.5% 1.5% 4.5% 1.5%;
+    background-color:rgb(190,190,190);
+    border-radius:100%;
+    transition:all 0.3s;
+    cursor:pointer;
+}
+#serInfoPictures li:hover,#serInfoPictures .serInfoPictureSelected{
+    border:2px solid white;
+    box-shadow: -2px 0 2px rgb(190,190,190), 0 2px 2px rgb(190,190,190), 2px 0 2px rgb(190,190,190), 0 -2px 2px rgb(190,190,190);
+    width:73%;
+    height:14%;
+    margin:100% 0 0 0;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+#serMoreInfo{
+    position:absolute;
+    width:55%;
+    height:35%;
+    top:50%;
+    left:12%;
+    background-color:rgba(255,255,255,0.8);
+    border:1px solid rgb(120,120,120);
+    box-shadow:-8px 8px 8px rgba(0,0,0,0.6);
+}
+#servicePersonCity{
+    color:rgb(190,190,190);
+    font-size:0.9vw;
+    margin-bottom:0px;
+    margin-top:10px;
+    margin-left:1px;
+}
+#servicePersonName{
+    color:rgb(120,120,120);
+    font-size:1.6vw;
+    line-height:1;
+}
+
+#serviceGallery{
+    display:block;
+    margin:auto;
+    width:65%;
+    height:40%;
+    left:79%;
+    top:5%;
+    position:absolute;
+    box-shadow:-5px 5px 10px rgba(0,0,0,0.7);
+    background-color:rgba(90,90,90,0.9);
+}
+.serGallerySide{
+    animation-name:serGallerySide;
+    -webkit-animation: serGallerySide 0.3s;
+    -moz-animation: serGallerySide 0.3s;
+    -o-animation: serGallerySide 0.3s;
+    animation: serGallerySide 0.3s;
+    display:inline-block;
+    position:relative;
+    width:30%;
+    margin:5px 5px;
+    height:90%;
+}
+#secondPersonFrame{
+    margin-top:10px;
+}
+#firstPersonHover,#thirdPersonHover{
+    top:0;
+    left:0;
+    margin-left:15%;
+    margin-top:16%;
+    position:absolute;
+    width:70%;
+    height:70%;
+    background-color:rgba(255,255,0,0.7);
+    visibility:hidden;
+    cursor: pointer;
+    text-align:center;
+}
+#firstPersonHover p,#thirdPersonHover p{
+    margin-top:40%;
+    display:block;
+    color:rgb(120,120,120);
+    font-family: "Century Gothic";
+    font-size:0.8vw;
+    cursor:pointer;
+}
+#firstPersonHover span,#thirdPersonHover span{
+    display:block;
+    margin-top:40%;
+    font-size:0.8vw;
+    color:rgb(240,240,240);
+    font-family:"Open Sans";
+    cursor:pointer;
+}
+#firstPersonFrame:hover div,#thirdPersonFrame:hover div{
+    visibility:visible;
+}
+#firstPersonFrame img,#thirdPersonFrame img{
+    width:80%;
+    height:80%;
+    margin:10%;
+    filter:grayscale(100%);
+    position:relative;
+    opacity:0.9;
+}
+#secondPersonFrame img{
+    width:100%;
+    height:100%;
+    position:relative;
+
+}
+#secondPersonFrame{
+    box-shadow:-6px 6px 10px rgba(0,0,0,0.5);
+}
+

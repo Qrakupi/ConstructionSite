@@ -1,0 +1,109 @@
+#contactUs{
+    width:100%;
+    height:400px;
+    background-image:url("../pictures/contactBgFinal.png");
+    background-size:100% 100%;
+}
+#contactUsLocation{
+    width:49%;
+    height:100%;
+    display:inline-block;
+    position:relative;
+}
+#contactUsLocation iframe{
+    width:80%;
+    height:70%;
+    margin:auto;
+    margin-top:13%;
+    display:block;
+}
+#contactUsLocationBox{
+    width:40%;
+    height:25%;
+    background-color:rgba(255,255,255,0.7);
+    border:1px solid rgb(190,190,190);
+    text-align:center;
+    position:absolute;
+    top:45%;
+    left:30%;
+}
+#contactUsLocationHeadline{
+    font-family:"Century Gothic";
+    font-size:1.3vw;
+    color:rgb(90,90,90);
+    margin-bottom:0px;
+}
+#contactUsLocationBox hr{
+    width:70%;
+    height:2px;
+    background-color:rgb(30,140,240);
+    margin-top:3px;
+    margin-bottom:13px;
+}
+#contactUsLocationInfo{
+    font-family:"Open Sans";
+    font-size:1vw;
+    color:rgb(140,140,140);
+}
+
+#contactUsInfo{
+    width:50%;
+    height:100%;
+    display:inline-block;
+}
+#contactUsInfoBodyHolder{
+    width:40%;
+    height:50%;
+    margin:auto;
+    margin-top:23%;
+}
+.contactUSInfoBody{
+    /*31-35 180-28 212-35*/
+    width:100%;
+    height:40%;
+    margin-top:20%;
+    position:relative;
+}
+.contactUsInfoHeadline{
+    width:79%;
+    height:43%;
+    position:absolute;
+    top:-24%;
+    left:-6%;
+}
+.contactUsInfoIcon{
+    width:15%;
+    height:100%;
+    background-color:rgb(90,90,90);
+    display:inline-block;
+    float:left;
+    border:1px solid rgb(190,190,190);
+}
+.contactUsInfoIcon img{
+    width:70%;
+    height:80%;
+    margin-left:15%;
+    margin-top:10%;
+}
+
+.contactUsInfoTitle{
+    width:85%;
+    height:80%;
+    margin-top:1.9%;
+    background-color:rgb(190,190,190);
+    color:rgb(90,90,90);
+    display:inline-block;
+    float:right;
+    font-family:"Century Gothic";
+    font-size:1.3vw;
+}
+.contactUsInfoData{
+    width:80%;
+    height:80%;
+    color:rgb(190,190,190);
+    font-family:Comfortaa;
+    font-size:1.4vw;
+    position:absolute;
+    top:30%;
+    left:10%;
+}

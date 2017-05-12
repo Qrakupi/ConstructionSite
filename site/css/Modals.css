@@ -1,0 +1,370 @@
+#galleryModal,#addPersonModal,#addProjectModal,#registerModal,#loginModal{
+    display: none;
+    position: fixed;
+    z-index: 9;
+    margin:0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+/*addPerson*/
+#addPerson{
+    cursor:pointer;
+    z-index:2;
+    top:15%;
+    left:90%;
+    position:fixed;
+    width: 80px;
+    height:80px;
+    border-radius:50%;
+    text-align:center;
+    vertical-align:middle;
+    font-family: "Century Gothic";
+    color:white;
+    background-color:rgba(255,255,0,0.6);
+}
+#addPerson:hover{
+    background-color:rgba(255,255,0,0.8);
+    color:rgb(230,230,230);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+#addPerson p{
+    margin-top:20%;
+}
+#addPersonBox{
+    width:30%;
+    height:70%;
+    top:15%;
+    left:35%;
+    position:fixed;
+    background-color:white;
+    border-radius:5%;
+}
+#addPersonClose{
+    text-align:center;
+    color:rgb(250,250,0);
+    font-size:2.3vw;
+    font-weight: bold;
+    width:5%;
+    height:10%;
+    cursor:pointer;
+    float:right;
+}
+#addPersonClose:hover{
+    text-shadow: -2px 0 rgb(220,220,220), 0 2px rgb(220,220,220), 2px 0 rgb(220,220,220), 0 -2px rgb(220,220,220);
+}
+.form-group{
+    width:80%;
+    margin:auto;
+    margin-top:3%;
+    height:80%;
+}
+.pics{
+    margin-top:5%;
+    margin-bottom:3%;
+}
+.pics div{
+    width:25%;
+    margin:auto;
+    display:inline-block;
+}
+.form-control{
+    height:20%;
+    font-size:1vw;
+}
+.btn{
+    width:30%;
+}
+
+/*addPerson*/
+#addProject{
+    cursor:pointer;
+    z-index:2;
+    top:25%;
+    margin-top:5%;
+    left:90%;
+    position:fixed;
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    text-align:center;
+    vertical-align:middle;
+    font-family: "Century Gothic";
+    color:white;
+    background-color:rgba(255,255,0,0.6);
+}
+#addProject:hover{
+    background-color:rgba(255,255,0,0.8);
+    color:rgb(230,230,230);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+#addProject p{
+    margin-top:20%;
+}
+#addProjectBox{
+    width:30%;
+    height:70%;
+    top:15%;
+    left:35%;
+    position:fixed;
+    background-color:white;
+    border-radius:5%;
+}
+#addProjectClose{
+    text-align:center;
+    color:rgb(250,250,0);
+    font-size:2.3vw;
+    font-weight: bold;
+    width:5%;
+    height:10%;
+    cursor:pointer;
+    float:right;
+}
+#addProjectClose:hover{
+    text-shadow: -2px 0 rgb(220,220,220), 0 2px rgb(220,220,220), 2px 0 rgb(220,220,220), 0 -2px rgb(220,220,220);
+}
+
+
+/*register und login*/
+#registerBox ,#loginbox{
+    padding: 10px;
+    margin: 10% auto;
+    width: 340px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+}
+h1 {
+    text-align: center;
+    font-size: 1.7vw;
+    color: #757575;
+    font-weight: 300;
+}
+h1, input {
+    font-family: "Open Sans", Helvetica, sans-serif;
+}
+.input {
+    width: 75%;
+    height: 50px;
+    display: block;
+    margin: 0 auto 15px;
+    padding: 0 15px;
+    border: none;
+    border-bottom: 2px solid #ebebeb;
+}
+.input:focus {
+    outline: none;
+    border-bottom-color: rgb(250,250,0) !important;
+}
+.input:hover {
+    border-bottom-color: #dcdcdc;
+}
+.input:invalid {
+    box-shadow: none;
+}
+.pass:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px white inset;
+}
+
+.inputButton {
+    position: relative;
+    width: 85%;
+    height: 50px;
+    display: block;
+    margin: 30px auto 30px;
+    color: rgb(190,190,190);
+    background-color: rgba(250,250,0,0.7);
+    border: none;
+    -webkit-box-shadow: 0 5px 0 rgb(230, 230, 20);
+    -moz-box-shadow: 0 5px 0 rgb(230, 230, 20);
+    box-shadow: 0 5px 0 rgb(230, 230, 20);
+}
+.inputButton:hover {
+    top: 2px;
+    background-color:rgb(250,250,0);
+    -webkit-box-shadow: 0 3px 0 rgb(230, 230, 20);
+    -moz-box-shadow: 0 3px 0 rgb(230, 230, 20);
+    box-shadow: 0 3px 0 rgb(230, 230, 20);
+}
+.inputButton:active {
+    top: 5px;
+    box-shadow: none;
+}
+.inputButton:focus {
+    outline: none;
+}
+
+/*gallery*/
+#modalBox{
+    width:60%;
+    height:400px;
+    top:20%;
+    left:20%;
+    bottom:20%;
+    position:fixed;
+    background-color:rgb(240,240,240);
+    border:2px solid rgb(160,160,160);
+}
+#modalGallery{
+    display:inline-block;
+    width:78%;
+    height: 100%;
+
+}
+#modalMain{
+    margin-top:38px;
+    margin-left:40px;
+    width:38%;
+    height:80%;
+    z-index:10;
+    border:5px solid white;
+    position:absolute;
+    -webkit-box-shadow: 5px 0px 10px rgba(0,0,0,0.3);
+    -moz-box-shadow: 5px 0px 10px  rgba(0,0,0,0.3);
+    box-shadow: 5px 0px 10px  rgba(0,0,0,0.6);
+}
+#modalInfo{
+    width:75%;
+    height:55%;
+    background-color:rgb(190,190,190);
+    margin-top: 90px;
+    margin-left:20px;
+    position:absolute;
+    box-shadow: 5px 2px 8px  rgba(0,0,0,0.4);
+}
+#modalInfo article{
+    width:41%;
+    height:100%;
+    float:right;
+    margin-right:20px;
+    margin-top:5px;
+}
+#modalLocation{
+    display:block;
+    width:100%;
+    height:28%;
+    margin-bottom:5px;
+}
+#modalCapital{
+    font-size:2.1vw;
+    color:rgb(250,250,0);
+    font-family:"Century Gothic";
+    display:block;
+    margin: 0px;
+    height:30px;
+}
+#modalCity{
+    font-size:1.4vw;
+    color:rgb(230,230,230);
+    font-family:"Open Sans";
+    margin:0px;
+}
+#modalPartners{
+    display:block;
+    height:40%;
+    margin-left:15px;
+}
+#modalPartners span{
+    width:100%;
+    font-size:1.3vw;
+    font-weight:bold;
+    font-family:"Open Sans";
+    color:white;
+    display:block;
+    border-bottom:1px solid rgb(250,250,250);
+    margin-bottom:5px;
+}
+#modalPartners p{
+    font-weight:normal;
+    margin-bottom:1px;
+    text-align:center;
+    font-size:0.9vw;
+    color:rgb(230,230,230);
+    display:block;
+}
+
+#modalPictures{
+    float:left;
+    display:inline-block;
+    width:15%;
+    height:100%;
+    background-color:rgb(250,250,250);
+    border-right:1px solid rgba(0,0,0,0.3);
+    box-shadow: 5px 0px 10px 0 rgba(0,0,0,0.3);
+}
+#modalPictures div{
+    width:96%;
+    height:22.8%;
+    display:block;
+    margin:auto;
+}
+#modalPictures div:first-child{
+    margin-top:4.2%;
+}
+#modalPictures img{
+    display:block;
+    width:78.3%;
+    height:88.6%;
+    margin:auto;
+    padding-top:5px;
+    padding-bottom:5px;
+    transition:width 0.3s,height 0.3s,box-shadow 0.3s;
+}
+#modalPictures img:hover{
+    width:87%;
+    height:100%;
+    padding-top:0px;
+    padding-bottom:0px;
+    box-shadow:6px 0px 10px rgba(0,0,0,0.3);
+}
+#modalPictures #selectedModalPic{
+    width:87%;
+    height:100%;
+    padding-top:0px;
+    padding-bottom:0px;
+    box-shadow:6px 0px 10px rgba(0,0,0,0.3);
+    border:5px solid rgb(250,250,0);
+    transition:all 0.3s;
+}
+
+#modalClose{
+    text-align:center;
+    color:rgb(250,250,0);
+    font-size:2.3vw;
+    font-weight: bold;
+    margin-right:2%;
+    margin-top:2%;
+    text-shadow: -2px 0 rgb(220,220,220), 0 2px rgb(220,220,220), 2px 0 rgb(220,220,220), 0 -2px rgb(220,220,220);
+    display:inline-block;
+    float:right;
+    width:5%;
+    height:10%;
+    cursor:pointer;
+    background-color:rgb(240,240,240);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+#modalClose:hover{
+    box-shadow: 1px 4px 10px 0 rgba(0, 0, 0, 0.3),3px 0px 10px 0 rgba(0, 0, 0, 0.3);
+    background-color:rgb(190,190,190);
+
+}
+
+

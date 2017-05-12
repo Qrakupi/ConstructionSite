@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-animate.js"></script>
+
+    <meta charset="UTF-8">
+    <title>PekiSait</title>
+
+    <link rel="stylesheet" href="css/Home.css">
+    <script src="javascript/Project.js"></script>
+    <script src="javascript/Service.js"></script>
+    <script src="javascript/AboutUs.js"></script>
+    <script src="javascript/ContactUs.js"></script>
+    <script src="javascript/Modal.js"></script>
+    <script src="javascript/Main.js"></script>
+    <script src="javascript/jquery-3.2.0.js"></script>
+    <link rel="stylesheet" href="css/Layout.css">
+    <link rel="stylesheet" href="css/Projects.css">
+    <link rel="stylesheet" href="css/Service.css">
+    <link rel="stylesheet" href="css/AboutUs.css">
+    <link rel="stylesheet" href="css/Modals.css">
+    <link rel="stylesheet" href="css/ContactUs.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+</head>
+<body onload="OnLoad()">
+ <div class="container-fluid" >
+     <div id="wrapper">
+         <div id="main">
+         <header class="row">
+             <div class="cl-md-5 logoContainer">
+                 <img src="pictures/logo.png" class="logoImage">
+                 <p class="logo">Peki62</p>
+             </div>
+             <ul id="navs">
+                <li class="cl-md-1 nav" id="home"><a href="#">НАЧАЛО</a></li>
+                <li class="cl-md-1 nav" id="projects"><a href="#">ПРОЕКТИ</a></li>
+                 <li class="cl-md-1 nav" id="about"><a href="#">ЗА НАС</a></li>
+                 <li class="cl-md-1 nav" id="services"><a href="#">УСЛУГИ</a></li>
+                <li class="cl-md-1 nav" id="contact"><a href="#">КОНТАКТ</a></li>
+            </ul>
+             <ul id="userNavs">
+                 <li class="cl-md-1 nav" id="login"><a href="#">ЛОГВАНЕ</a></li>
+                 <li class="cl-md-1 nav" id="register"><a href="#">РЕГИСТРАЦИЯ</a></li>
+                 <li class="cl-md-1 nav" id="logout"><a href="#">ИЗХОД</a></li>
+             </ul>
+         </header>
+         <div class="row">
+            <hr class="row" id="line">
+         </div>
+         <main class="row">
+             <div id="addPerson"><p>ДОБАВИ КОЛЕГА</p></div>
+             <div id="addPersonModal">
+                 <div id="addPersonBox">
+                     <form id="addPersonForm">
+                     <div class="form-group">
+                         <label for="addPersonName">Име</label>
+                         <input type="text" class="form-control" id="addPersonName">
+                     </div>
+                     <div class="form-group">
+                         <label for="addPersonTown">Град</label>
+                         <input type="text" class="form-control" id="addPersonTown">
+                     </div>
+                     <div class="form-group">
+                         <label for="addPersonProffession">Професия</label>
+                         <input type="text" class="form-control" id="addPersonProffession">
+                     </div>
+                     <div class="form-group">
+                         <label for="addPersonGalleryPic">Снимка в галерия</label>
+                         <input type="text" class="form-control" id="addPersonGalleryPic">
+                     </div>
+                     <div class="form-group pics">
+                         <div>
+                         <label for="addPersonFirstPic">Първа снимка</label>
+                         <input type="text" class="form-control" id="addPersonFirstPic">
+                         </div>
+                         <div>
+                         <label for="addPersonSecondPic">Втора снимка</label>
+                         <input type="text" class="form-control" id="addPersonSecondPic">
+                         </div>
+                         <div>
+                         <label for="addPersonThirdPic">Трета снимка</label>
+                         <input type="text" class="form-control" id="addPersonThirdPic">
+                         </div>
+                     </div>
+                     <button type="submit" class="btn btn-default">Submit</button>
+                     </form>
+                     </div>
+                     <div id="addPersonClose">
+                         &times;
+                     </div>
+                 </div>
+             <div id="addProject"><p>ДОБАВИ ПРОЕКТ</p></div>
+             <div id="addProjectModal">
+                 <div id="addProjectBox">
+                     <form id="addProjectForm">
+                         <div class="form-group">
+                             <label for="addProjectCountry">Държава</label>
+                             <input type="text" class="form-control" id="addProjectCountry">
+                         </div>
+                         <div class="form-group">
+                             <label for="addProjectCity">Град</label>
+                             <input type="text" class="form-control" id="addProjectCity">
+                         </div>
+                         <div class="form-group pics">
+                             <div>
+                                 <label for="addProjectClientName">Клиент</label>
+                                 <input type="text" class="form-control" id="addProjectClientName">
+                             </div>
+                             <div>
+                                 <label for="addProjectLeaderName">Управител</label>
+                                 <input type="text" class="form-control" id="addProjectLeaderName">
+                             </div>
+                             <div>
+                                 <label for="addProjectSpace">Кв.Метра</label>
+                                 <input type="text" class="form-control" id="addProjectSpace">
+                             </div>
+                         </div>
+                         <div class="form-group">
+                             <label for="addProjectGalleryPic">Снимка в галерия</label>
+                             <input type="text" class="form-control" id="addProjectGalleryPic">
+                         </div>
+                         <div class="form-group pics">
+                             <div>
+                                 <label for="addProjectFirstPic">Първа снимка</label>
+                                 <input type="text" class="form-control" id="addProjectFirstPic">
+                             </div>
+                             <div>
+                                 <label for="addProjectSecondPic">Втора снимка</label>
+                                 <input type="text" class="form-control" id="addProjectSecondPic">
+                             </div>
+                             <div>
+                                 <label for="addProjectThirdPic">Трета снимка</label>
+                                 <input type="text" class="form-control" id="addProjectThirdPic">
+                             </div>
+                         </div>
+                         <button type="submit" class="btn btn-default">Submit</button>
+                     </form>
+                 </div>
+                 <div id="addProjectClose">
+                     &times;
+                 </div>
+             </div>
+             <div id="registerModal">
+                 <div id="registerBox"  >
+                     <form id="signup" method="post" action="/signup" >
+                         <h1>Създаи акаунт</h1>
+                         <input name="user[email]" type="email" placeholder="Въведи е-майл" class="input pass"/>
+                         <input name="user[password]" type="password" placeholder="Избери парола" required="required" class="input pass"/>
+                         <input name="user[password2]" type="password" placeholder="Потвърди парола" required="required" class="input pass"/>
+                         <input type="submit" value="Регистрираи ме!" class="inputButton"/>
+                     </form>
+                 </div>
+             </div>
+             <div id="loginModal">
+                 <div id="loginbox"  >
+                     <form id="signin" method="get" action="/login" >
+                         <h1>Влезни в акаунт</h1>
+                         <input name="user[email]" type="email" placeholder="Въведи е-майл" class="input pass"/>
+                         <input name="user[password]" type="password" placeholder="Въведи парола" required="required" class="input pass"/>
+                         <input type="submit" value="Вкарай ме!" class="inputButton"/>
+                     </form>
+                 </div>
+             </div>
+             <p id="mainHeadliner">ПОСТРОИ СВОИТЕ МЕЧТИ</p>
+             <p id="mainInfo">Нашта фирма ще осъществи всичките ви мечти и желания свързани с груб строеж...</p>
+             <div><button id="mainInfoButton">ВИЖ ОЩЕ</button></div>
+         </main>
+         </div>
+         <div class="row" id="project">
+             <button class="galleryButton" id="gallLeftButton"><</button>
+             <div id="gallery">
+             <div class="cl-md-6 frames" id="leftFrame">
+                 <div class="frameInfo">
+                     <img src="" class="framePicture">
+                     <div style="display:inline-block;">
+                        <p class="frameCountry"></p>
+                        <p class="frameCity"></p>
+                     </div>
+                     <div class="frameMore"><img src="pictures/info.png" class="morePicture"></div>
+                 </div>
+             </div>
+             <div class="cl-md-6 frames" id="midFrame">
+                 <div class="frameInfo">
+                     <img src="" class="framePicture">
+                     <div style="display:inline-block;">
+                         <p class="frameCountry"></p>
+                         <p class="frameCity"></p>
+                     </div>
+                     <div class="frameMore"><img src="pictures/info.png" class="morePicture"></div>
+                 </div>
+             </div>
+             <div class="cl-md-6 frames" id="rightFrame">
+                 <div class="frameInfo">
+                     <img src="" class="framePicture">
+                     <div style="display:inline-block;">
+                        <p class="frameCountry"></p>
+                        <p class="frameCity"></p>
+                     </div>
+                     <div class="frameMore"><img src="pictures/info.png" class="morePicture"></div>
+                 </div>
+             </div>
+             </div>
+             <button class="galleryButton" id="gallRightButton">></button>
+             <div id="galleryModal">
+                 <div id="modalBox">
+                     <div id="modalPictures">
+                         <div><img src="" id="selectedModalPic"></div>
+                         <div><img src=""></div>
+                         <div><img src=""></div>
+                     </div>
+                     <div id="modalGallery">
+                         <img src="" id="modalMain">
+                         <div id="modalInfo">
+                             <article>
+                                 <div id="modalLocation">
+                                     <p id="modalCapital">България</p>
+                                     <p id="modalCity">София</p>
+                                 </div>
+                                 <div id="modalPartners">
+                                     <span id="modalClient">Клиент<p></p></span>
+                                     <span id="modalLeader">Ръководител<p></p></span>
+                                     <span id="modalSize">Площ<p></p></span>
+                                 </div>
+                             </article>
+                         </div>
+                     </div>
+                     <div id="modalClose">
+                         &times;
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <div class="row" id="service">
+             <div id="serviceInfo">
+                 <p id="serInfoHeadline" style="margin-top:2%;margin-left:5%;">НАШИЯТ<br><span style="color:rgb(110,110,110)"> ЕКИП</span></p>
+                 <div id="serPicturesHolder">
+                     <div id="serInfoPicture"></div>
+                     <ul id="serInfoPictures">
+                         <li></li>
+                         <li></li>
+                         <li></li>
+                     </ul>
+                 </div>
+                 <div id="serMoreInfo">
+                     <div style="margin-left:10px">
+                     <p id="servicePersonCity">София</p>
+                     <p id="servicePersonName">Васил Василев</p>
+                     <p></p>
+                     </div>
+                 </div>
+                 <div id="serviceGallery">
+                     <div class="serGallerySide" id="firstPersonFrame">
+                         <img>
+                         <div id="firstPersonHover">
+                             <p>Петър Цеков</p>
+                             <span>Управител</span>
+                         </div>
+                     </div>
+                     <div class="serGallerySide" id="secondPersonFrame">
+                         <img><div id="secondPersonHover"></div>
+                     </div>
+                     <div class="serGallerySide" id="thirdPersonFrame">
+                         <img>
+                         <div id="thirdPersonHover">
+                             <p>Петър Петров</p>
+                             <span>Наркоман</span>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <div class="row" id="aboutUs">
+             <div id="aboutUsHeadLine"><p>УСЛУГИ</p></div>
+             <div id="aboutUsInfo">
+                 <article><p>УСЛУГИ КОИТО ПРЕДЛАГАМЕ</p>
+                     <span id="aboutUsInfoHidden">
+                         Ние сме фирма , която се занимава главно с груб строеж.Имаме десетки проекти из цяла България.
+                         Ние сме фирма , която се занимава главно с груб строеж.Имаме десетки проекти из цяла България.
+                         Ние сме фирма , която се занимава главно с груб строеж.Имаме десетки проекти из цяла България.
+                         Ние сме фирма , която се занимава главно с груб строеж..
+                     </span>
+                     <span id="aboutUsInfoDisplayed" style="display:none">
+                         Ние сме фирма , която се занимава главно с груб строеж.Имаме десетки проекти из цяла България.
+                         Ние сме фирма , която се занимава главно с груб строеж.Имаме десетки проекти из цяла България.
+                         Ние сме фирма , която се занимава главно с груб строеж.Имаме десетки проекти из цяла България.
+                         Ние сме фирма , която се занимава главно с груб строеж.Имаме десетки проекти из цяла България.
+                         Ние сме фирма , която се занимава главно с груб строеж.Имаме десетки проекти из цяла България.
+                         Ние сме фирма , която се занимава главно с груб строеж.Имаме десетки проекти из цяла България.
+                         Ние сме фирма , която се занимава главно с груб строеж.Имаме десетки проекти из цяла България.
+                     </span>
+                     <div id="aboutUsButton"><p>ПОКАЖИ ОЩЕ</p></div>
+                 </article>
+             </div>
+         </div>
+         <div class="row" id="contactUs">
+             <div id="contactUsLocation">
+                 <iframe id="contactUsLocationGoogleMap" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d2931.020456778936!2d23.27357800401022!3d42.72445774581965!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sbg!2sbg!4v1493728612985" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen>
+                 </iframe>
+                 <div id="contactUsLocationBox">
+                     <p id="contactUsLocationHeadline">Местоположение</p>
+                     <hr>
+                     <p id="contactUsLocationInfo">гр.София, кв.Модерно Предградие<br>Блок 3, вход Б, ап.7</p>
+                 </div>
+             </div>
+             <div id="contactUsInfo">
+                 <div id="contactUsInfoBodyHolder">
+                    <div class="contactUSInfoBody">
+                     <div class="contactUsInfoHeadline">
+                         <div class="contactUsInfoIcon">
+                             <img src="pictures/contact.png">
+                         </div>
+                         <div class="contactUsInfoTitle">
+                             <p>Телефон</p>
+                         </div>
+                     </div>
+                     <div class="contactUsInfoData">087 654 3210</div>
+                 </div>
+                    <div class="contactUSInfoBody" style="border:0px">
+                     <div class="contactUsInfoHeadline">
+                         <div class="contactUsInfoIcon">
+                             <img src="pictures/email1.png" style="height:70%;margin-top:15%;">
+                         </div>
+                         <div class="contactUsInfoTitle">
+                             <p>Е-майл</p>
+                         </div>
+                     </div>
+                     <div class="contactUsInfoData">ВИП-БИЛДСТРОИ</div>
+                 </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+     <div style="clear:both;"></div>
+     <div class="row">
+         <footer>
+             <div>Petar52©</div>
+         </footer>
+     </div>
+ </div>
+</body>
+</html>
